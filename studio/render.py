@@ -192,13 +192,27 @@ def main():
                                     encoding="utf-8")
 
     reels = job["reels"]
+    waarschuwingen = []
     for reel in reels:
+        gelukt = []
+        mislukt = []
         for d in reel["dias"]:
-            d["beeld"] = beeld_naar_bestand(d["beeld"], web)
+            try:
+                d["beeld"] = beeld_naar_bestand(d["beeld"], web)
+                gelukt.append(d["beeld"])
+            except Exception as e:  # noqa: BLE001
+                print("Beeld niet bereikbaar:", d["beeld"], e)
+                waarschuwingen.append(f"Beeld {d['beeld']} niet bereikbaar in reel {reel['naam']}")
+                mislukt.append(d)
+        if not gelukt:
+            raise RuntimeError(f"Geen enkel beeld bereikbaar voor reel {reel['naam']}")
+        for i, d in enumerate(mislukt):  # vervang door een ander beeld uit dezelfde reel
+            d["beeld"] = gelukt[i % len(gelukt)]
     render_dias(reels, web, uit)
 
     gebruikt = set()
-    manifest = {"datum": datum, "gemaakt": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "reels": []}
+    manifest = {"datum": datum, "gemaakt": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+                "waarschuwingen": waarschuwingen, "reels": []}
     for reel in reels:
         muziek = kies_muziek(gebruikt, Path("_web")) if job.get("muziek", True) else (None, None, 0)
         video, duur = maak_video(reel, uit, muziek)
