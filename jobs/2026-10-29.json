@@ -1,0 +1,27 @@
+{
+  "datum": "2026-10-29",
+  "reels": [
+    {
+      "naam": "edge-het-is-klaar",
+      "titel": "GTA 6 Edge: Rockstar zegt dat de game klaar is",
+      "dias": [
+        {"type": "cover", "label": "Officieel", "titel": "Rockstar: GTA 6 is klaar", "accent": "klaar", "sub": "16 pagina's nieuwe details in het grote Edge-verhaal", "beeld": "https://gta6centraal.com/wp-content/uploads/2026/10/Jason_and_Lucia_03-scaled.jpg"},
+        {"type": "punt", "nr": 1, "titel": "Auto's met een tracker", "tekst": "Dure auto's sturen je locatie door. Eigenaars bellen de politie of vechten terug.", "beeld": "https://gta6centraal.com/wp-content/uploads/2026/10/ULTIMATE_EDITION_GROTTI_CHEETAH_02-scaled.jpg"},
+        {"type": "punt", "nr": 2, "titel": "De politie onthoudt je", "tekst": "Je kleren, je wapen, je partner: wissel van outfit om minder herkenbaar te zijn.", "beeld": "https://gta6centraal.com/wp-content/uploads/2026/10/Jason_Duval_05-scaled.jpg"},
+        {"type": "punt", "nr": 3, "titel": "Voorbijgangers met geheugen", "tekst": "Wie je beroofde, kan je later aanvallen. Een man stuurt zelfs zijn hond op je af.", "beeld": "https://gta6centraal.com/wp-content/uploads/2026/10/Lucia_Caminos_04-scaled.jpg"},
+        {"type": "vraag", "titel": "Welk detail maakt jou het meest hyped?", "sub": "Bron: Edge, gesprekken met Rockstar North", "beeld": "https://gta6centraal.com/wp-content/uploads/2026/10/Jason_and_Lucia_07-scaled.jpg"}
+      ]
+    },
+    {
+      "naam": "miami-reclame-luchthaven",
+      "titel": "GTA 6 Miami reclame: Rockstar betaalt 3,9 miljoen dollar",
+      "dias": [
+        {"type": "cover", "label": "Officieel", "titel": "Miami wordt Vice City: 3,9 miljoen", "accent": "Vice City:", "sub": "Rockstar koopt reclame tot op de luchthaven", "beeld": "https://gta6centraal.com/wp-content/uploads/2026/10/VINTAGE_VICE_CITY_PACK_01-scaled.jpg"},
+        {"type": "punt", "nr": 1, "titel": "Luchthaven en haven", "tekst": "Vice City-verlichting op Miami International Airport en in PortMiami.", "beeld": "https://gta6centraal.com/wp-content/uploads/2026/10/Jason_and_Lucia_10-scaled.jpg"},
+        {"type": "punt", "nr": 2, "titel": "Ook de verkeerskasten", "tekst": "Kasten van verkeerslichten in de hele county krijgen een GTA 6-wrap.", "beeld": "https://gta6centraal.com/wp-content/uploads/2026/10/ULTIMATE_EDITION_VICE_CITY_STYLE_03-scaled.jpg"},
+        {"type": "punt", "nr": 3, "titel": "De sheriff verloor", "tekst": "Ze was fel tegen een game vol misdaad als reclame. Toch gaat het door.", "beeld": "https://gta6centraal.com/wp-content/uploads/2026/10/Lucia_Caminos_08-scaled.jpg"},
+        {"type": "vraag", "titel": "Zou jij landen in Vice City?", "sub": "Bron: persbericht burgemeester Miami-Dade", "beeld": "https://gta6centraal.com/wp-content/uploads/2026/10/Jason_and_Lucia_12-scaled.jpg"}
+      ]
+    }
+  ]
+}
