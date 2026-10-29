@@ -6,12 +6,44 @@
       "naam": "test-quiz-personage",
       "titel": "Welk GTA 6-personage ben jij?",
       "dias": [
-        {"type": "cover", "label": "Quiz", "titel": "Welk GTA 6-personage ben jij?", "accent": "GTA 6-personage", "sub": "7 vragen, 1 minuut en 6 mogelijke uitkomsten", "beeld": 252},
-        {"type": "punt", "nr": 1, "titel": "Jason of Lucia?", "tekst": "De loyale ex-militair of de vechter die nooit opgeeft?", "beeld": 242},
-        {"type": "punt", "nr": 2, "titel": "Of toch Cal?", "tekst": "De thuisblijver die stiekem de radio van de kustwacht afluistert.", "beeld": 158},
-        {"type": "punt", "nr": 3, "titel": "Boobie, Real Dimez of Raul?", "tekst": "Een zakenman, een viraal rapduo of een bankrover met te veel lef.", "beeld": 152},
-        {"type": "vraag", "titel": "Wie ben jij in Vice City?", "sub": "Doe de quiz en tag je vrienden met hun uitslag", "knop": "Doe de quiz: link in bio", "beeld": 266}
+        {
+          "type": "cover",
+          "label": "Quiz",
+          "titel": "Welk GTA 6-personage ben jij?",
+          "accent": "GTA 6-personage",
+          "sub": "7 vragen, 1 minuut en 6 mogelijke uitkomsten",
+          "beeld": 252
+        },
+        {
+          "type": "punt",
+          "nr": 1,
+          "titel": "Jason of Lucia?",
+          "tekst": "De loyale ex-militair of de vechter die nooit opgeeft?",
+          "beeld": 242
+        },
+        {
+          "type": "punt",
+          "nr": 2,
+          "titel": "Of toch Cal?",
+          "tekst": "De thuisblijver die stiekem de radio van de kustwacht afluistert.",
+          "beeld": 158
+        },
+        {
+          "type": "punt",
+          "nr": 3,
+          "titel": "Boobie, Real Dimez of Raul?",
+          "tekst": "Een zakenman, een viraal rapduo of een bankrover met te veel lef.",
+          "beeld": 152
+        },
+        {
+          "type": "vraag",
+          "titel": "Wie ben jij in Vice City?",
+          "sub": "Doe de quiz en tag je vrienden met hun uitslag",
+          "knop": "Doe de quiz: link in bio",
+          "beeld": 266
+        }
       ]
     }
-  ]
+  ],
+  "poging": 2
 }

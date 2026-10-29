@@ -48,7 +48,10 @@ jobs:
           npm install --no-save --silent @fontsource/bebas-neue @fontsource/inter
 
       - name: Dia's en video's maken
-        run: python studio/render.py "${{ steps.job.outputs.bestand }}" out
+        run: |
+          set -o pipefail
+          mkdir -p "out/${{ steps.job.outputs.datum }}"
+          python -u studio/render.py "${{ steps.job.outputs.bestand }}" out 2>&1 | tee "out/${{ steps.job.outputs.datum }}/log.txt"
 
       - name: Foutmelding klaarzetten
         if: failure()
