@@ -23,7 +23,7 @@ import urllib.request
 from pathlib import Path
 
 SITE = "https://gta6centraal.com"
-REPO_RAW = "https://raw.githubusercontent.com/gtallpulse-hash/gtavi-studio/media"
+REPO_RAW = "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media"
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36 GTAVI-STUDIO"
 DIA_SEC = 3.4      # duur per dia
 OVERGANG = 0.4     # overvloeier
