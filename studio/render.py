@@ -150,7 +150,7 @@ def maak_video(reel, uit, muziek):
         vorige = f"x{i}"
     a = n
     if pad_muziek:
-        filt.append(f"[{a}:a]atrim=0:{totaal:.2f},afade=t=in:d=0.6,afade=t=out:st={totaal - 1.6:.2f}:d=1.6,volume=0.85[a]")
+        filt.append(f"[{a}:a]atrim=0:{totaal:.2f},afade=t=in:d=0.6,afade=t=out:st={totaal - 1.6:.2f}:d=1.6,loudnorm=I=-14:TP=-1.5:LRA=11,aresample=44100[a]")
     else:
         filt.append(f"[{a}:a]atrim=0:{totaal:.2f}[a]")
     video = uit / f"{reel['naam']}-short.mp4"
