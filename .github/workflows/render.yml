@@ -4,6 +4,10 @@ on:
   push:
     branches: [main]
     paths: ["jobs/*.json"]
+  schedule:
+    # Elke 10 minuten tussen 06:00 en 10:00 (Belgische wintertijd): haalt de opdracht op
+    # die de scheduled task via Make op gta6centraal.com zette (renderopdracht-<datum>.txt)
+    - cron: "*/10 5-8 * * *"
   workflow_dispatch:
     inputs:
       datum:
@@ -29,10 +33,37 @@ jobs:
       - name: Welke opdracht?
         id: job
         run: |
+          f=""
           if [ -n "${{ github.event.inputs.datum }}" ]; then
             f="jobs/${{ github.event.inputs.datum }}.json"
-          else
+          elif [ "${{ github.event_name }}" = "push" ]; then
             f=$(git diff --name-only --diff-filter=AM HEAD~1 HEAD -- 'jobs/*.json' | sort | tail -1)
+          elif [ "${{ github.event_name }}" = "schedule" ]; then
+            d=$(TZ=Europe/Brussels date +%F)
+            if git ls-remote --exit-code --heads origin media > /dev/null; then
+              git fetch -q --depth 1 origin media
+              if git cat-file -e "origin/media:$d/manifest.json" 2>/dev/null; then
+                echo "Media van $d staan er al, niets te doen."
+                echo "skip=true" >> "$GITHUB_OUTPUT"; exit 0
+              fi
+            fi
+            if [ ! -f "jobs/$d.json" ]; then
+              url=$(curl -s -A "Mozilla/5.0 GTAVI-STUDIO" "https://gta6centraal.com/wp-json/wp/v2/media?search=renderopdracht-$d&orderby=id&order=desc&per_page=5&_fields=id,source_url" \
+                | python3 -c "import json,sys
+          try:
+              r=[m['source_url'] for m in json.load(sys.stdin) if 'renderopdracht-$d' in m.get('source_url','')]
+              print(r[0] if r else '')
+          except Exception: print('')")
+              if [ -z "$url" ]; then
+                echo "Nog geen renderopdracht voor $d op de site."
+                echo "skip=true" >> "$GITHUB_OUTPUT"; exit 0
+              fi
+              echo "Opdracht gevonden: $url"
+              curl -sf -A "Mozilla/5.0 GTAVI-STUDIO" "$url" -o "jobs/$d.json"
+              python3 -m json.tool "jobs/$d.json" > /dev/null || { echo "Opdracht is geen geldige JSON"; cat "jobs/$d.json"; exit 1; }
+              echo "nieuw=true" >> "$GITHUB_OUTPUT"
+            fi
+            f="jobs/$d.json"
           fi
           if [ -z "$f" ] || [ ! -f "$f" ]; then
             echo "Geen nieuwe opdracht, niets te doen."
@@ -90,3 +121,13 @@ jobs:
           git -c user.name="gtavi-studio-bot" -c user.email="actions@users.noreply.github.com" commit -q -m "Media ${{ steps.job.outputs.datum }}"
           git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" media
           echo "Klaar: https://raw.githubusercontent.com/${{ github.repository }}/media/${{ steps.job.outputs.datum }}/manifest.json"
+
+      - name: Opdracht bewaren in jobs/ (logboek)
+        if: success() && steps.job.outputs.nieuw == 'true'
+        run: |
+          cd "$GITHUB_WORKSPACE"
+          git config user.name "gtavi-studio-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add "${{ steps.job.outputs.bestand }}"
+          git commit -q -m "Renderopdracht ${{ steps.job.outputs.datum }} (van de site) [skip ci]"
+          git pull -q --rebase origin main && git push -q origin HEAD:main || echo "Bewaren mislukt, niet erg"
