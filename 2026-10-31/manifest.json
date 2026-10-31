@@ -1,0 +1,57 @@
+{
+  "datum": "2026-10-31",
+  "gemaakt": "2026-10-31T10:38:00Z",
+  "waarschuwingen": [],
+  "reels": [
+    {
+      "naam": "geursysteem-hondenpoep",
+      "titel": "GTA 6 geursysteem: Jason walgt van hondenpoep",
+      "video": "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-31/geursysteem-hondenpoep-short.mp4",
+      "duur_sec": 15.4,
+      "fotos_4x5": [
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-31/geursysteem-hondenpoep-4x5-1.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-31/geursysteem-hondenpoep-4x5-2.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-31/geursysteem-hondenpoep-4x5-3.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-31/geursysteem-hondenpoep-4x5-4.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-31/geursysteem-hondenpoep-4x5-5.png"
+      ],
+      "fotos_9x16": [
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-31/geursysteem-hondenpoep-9x16-1.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-31/geursysteem-hondenpoep-9x16-2.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-31/geursysteem-hondenpoep-9x16-3.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-31/geursysteem-hondenpoep-9x16-4.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-31/geursysteem-hondenpoep-9x16-5.png"
+      ],
+      "muziek": {
+        "titel": "Ouroboros",
+        "artiest": "Kevin MacLeod",
+        "credit": "Muziek: \"Ouroboros\" door Kevin MacLeod (incompetech.com), licentie CC BY 4.0"
+      }
+    },
+    {
+      "naam": "south-park-gameplay",
+      "titel": "GTA 6 South Park: Rockstar leverde echte gameplay",
+      "video": "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-31/south-park-gameplay-short.mp4",
+      "duur_sec": 15.4,
+      "fotos_4x5": [
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-31/south-park-gameplay-4x5-1.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-31/south-park-gameplay-4x5-2.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-31/south-park-gameplay-4x5-3.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-31/south-park-gameplay-4x5-4.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-31/south-park-gameplay-4x5-5.png"
+      ],
+      "fotos_9x16": [
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-31/south-park-gameplay-9x16-1.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-31/south-park-gameplay-9x16-2.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-31/south-park-gameplay-9x16-3.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-31/south-park-gameplay-9x16-4.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-31/south-park-gameplay-9x16-5.png"
+      ],
+      "muziek": {
+        "titel": "Volatile Reaction",
+        "artiest": "Kevin MacLeod",
+        "credit": "Muziek: \"Volatile Reaction\" door Kevin MacLeod (incompetech.com), licentie CC BY 4.0"
+      }
+    }
+  ]
+}

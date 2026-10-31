@@ -1,0 +1,57 @@
+{
+  "datum": "2026-10-29",
+  "gemaakt": "2026-10-29T14:26:06Z",
+  "waarschuwingen": [],
+  "reels": [
+    {
+      "naam": "edge-het-is-klaar",
+      "titel": "GTA 6 Edge: Rockstar zegt dat de game klaar is",
+      "video": "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-29/edge-het-is-klaar-short.mp4",
+      "duur_sec": 15.4,
+      "fotos_4x5": [
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-29/edge-het-is-klaar-4x5-1.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-29/edge-het-is-klaar-4x5-2.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-29/edge-het-is-klaar-4x5-3.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-29/edge-het-is-klaar-4x5-4.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-29/edge-het-is-klaar-4x5-5.png"
+      ],
+      "fotos_9x16": [
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-29/edge-het-is-klaar-9x16-1.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-29/edge-het-is-klaar-9x16-2.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-29/edge-het-is-klaar-9x16-3.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-29/edge-het-is-klaar-9x16-4.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-29/edge-het-is-klaar-9x16-5.png"
+      ],
+      "muziek": {
+        "titel": "Funkorama",
+        "artiest": "Kevin MacLeod",
+        "credit": "Muziek: \"Funkorama\" door Kevin MacLeod (incompetech.com), licentie CC BY 4.0"
+      }
+    },
+    {
+      "naam": "miami-reclame-luchthaven",
+      "titel": "GTA 6 Miami reclame: Rockstar betaalt 3,9 miljoen dollar",
+      "video": "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-29/miami-reclame-luchthaven-short.mp4",
+      "duur_sec": 15.4,
+      "fotos_4x5": [
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-29/miami-reclame-luchthaven-4x5-1.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-29/miami-reclame-luchthaven-4x5-2.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-29/miami-reclame-luchthaven-4x5-3.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-29/miami-reclame-luchthaven-4x5-4.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-29/miami-reclame-luchthaven-4x5-5.png"
+      ],
+      "fotos_9x16": [
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-29/miami-reclame-luchthaven-9x16-1.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-29/miami-reclame-luchthaven-9x16-2.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-29/miami-reclame-luchthaven-9x16-3.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-29/miami-reclame-luchthaven-9x16-4.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-10-29/miami-reclame-luchthaven-9x16-5.png"
+      ],
+      "muziek": {
+        "titel": "Rocket",
+        "artiest": "Kevin MacLeod",
+        "credit": "Muziek: \"Rocket\" door Kevin MacLeod (incompetech.com), licentie CC BY 4.0"
+      }
+    }
+  ]
+}
