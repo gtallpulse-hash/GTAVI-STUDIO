@@ -30,6 +30,6 @@ for m in items:
         print(f"Media {m['id']} heeft datum {job.get('datum')}, verwacht {d}"); continue
     with open(doel, "w", encoding="utf-8") as f:
         json.dump(job, f, ensure_ascii=False, indent=1)
-    print(f"::notice::Opdracht gevonden in media {m['id']}: {len(job.get('reels', []))} reels -> {doel}")
+    print(f"::notice::Opdracht gevonden in media {m['id']}: {len(job.get('reels', []))} reels -> {doel}; eerste titel: {job['reels'][0].get('titel')}")
     sys.exit(0)
 print(f"::notice::Nog geen {naam} op de site ({len(items)} zoekresultaten)."); sys.exit(2)
