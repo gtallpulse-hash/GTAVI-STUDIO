@@ -14,7 +14,7 @@ req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 GTAVI-STUD
 try:
     items = json.load(urllib.request.urlopen(req, timeout=60))
 except Exception as e:  # noqa: BLE001
-    print("Site niet bereikbaar:", e); sys.exit(2)
+    print("::notice::Site niet bereikbaar:", e); sys.exit(2)
 for m in items:
     titel = html.unescape(m.get("title", {}).get("rendered", ""))
     if not titel.startswith(naam):
@@ -25,11 +25,11 @@ for m in items:
         tekst = base64.b64decode(ruw + "=" * (-len(ruw) % 4)).decode("utf-8")
         job = json.loads(tekst)
     except Exception as e:  # noqa: BLE001
-        print(f"Media {m['id']} is geen geldige opdracht: {e}"); continue
+        print(f"::warning::Media {m['id']} is geen geldige opdracht: {e}"); continue
     if job.get("datum") != d:
         print(f"Media {m['id']} heeft datum {job.get('datum')}, verwacht {d}"); continue
     with open(doel, "w", encoding="utf-8") as f:
         json.dump(job, f, ensure_ascii=False, indent=1)
-    print(f"Opdracht gevonden in media {m['id']}: {len(job.get('reels', []))} reels -> {doel}")
+    print(f"::notice::Opdracht gevonden in media {m['id']}: {len(job.get('reels', []))} reels -> {doel}")
     sys.exit(0)
-print(f"Nog geen {naam} op de site."); sys.exit(2)
+print(f"::notice::Nog geen {naam} op de site ({len(items)} zoekresultaten)."); sys.exit(2)

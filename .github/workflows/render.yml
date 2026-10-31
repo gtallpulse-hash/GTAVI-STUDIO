@@ -57,7 +57,7 @@ jobs:
             if [ ! -f "jobs/$d.json" ] || [ -n "${{ github.event.inputs.van_site }}" ]; then
               set +e; python3 studio/haal_opdracht.py "$d" "jobs/$d.json"; rc=$?; set -e
               if [ $rc -ne 0 ]; then echo "skip=true" >> "$GITHUB_OUTPUT"; exit 0; fi
-              cat "jobs/$d.json"
+              cat "jobs/$d.json"; echo "::notice::$(python3 -c "import json;j=json.load(open('jobs/$d.json'));print(j['reels'][0]['titel'])")"
               echo "nieuw=true" >> "$GITHUB_OUTPUT"
             fi
             if [ "${{ github.event.inputs.alleen_ophalen }}" = "ja" ]; then
