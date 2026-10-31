@@ -11,7 +11,13 @@ on:
   workflow_dispatch:
     inputs:
       datum:
-        description: "Datum van de opdracht (bv. 2026-10-30), leeg = nieuwste"
+        description: "Datum van een opdracht in jobs/ (bv. 2026-10-30)"
+        required: false
+      van_site:
+        description: "Of: datum van een opdracht die op de site staat (renderopdracht-<datum>)"
+        required: false
+      alleen_ophalen:
+        description: "ja = alleen ophalen en tonen (test), niet renderen"
         required: false
 
 permissions:
@@ -38,30 +44,25 @@ jobs:
             f="jobs/${{ github.event.inputs.datum }}.json"
           elif [ "${{ github.event_name }}" = "push" ]; then
             f=$(git diff --name-only --diff-filter=AM HEAD~1 HEAD -- 'jobs/*.json' | sort | tail -1)
-          elif [ "${{ github.event_name }}" = "schedule" ]; then
-            d=$(TZ=Europe/Brussels date +%F)
-            if git ls-remote --exit-code --heads origin media > /dev/null; then
+          elif [ "${{ github.event_name }}" = "schedule" ] || [ -n "${{ github.event.inputs.van_site }}" ]; then
+            d="${{ github.event.inputs.van_site }}"
+            [ -z "$d" ] && d=$(TZ=Europe/Brussels date +%F)
+            if [ "${{ github.event_name }}" = "schedule" ] && git ls-remote --exit-code --heads origin media > /dev/null; then
               git fetch -q --depth 1 origin media
               if git cat-file -e "origin/media:$d/manifest.json" 2>/dev/null; then
                 echo "Media van $d staan er al, niets te doen."
                 echo "skip=true" >> "$GITHUB_OUTPUT"; exit 0
               fi
             fi
-            if [ ! -f "jobs/$d.json" ]; then
-              url=$(curl -s -A "Mozilla/5.0 GTAVI-STUDIO" "https://gta6centraal.com/wp-json/wp/v2/media?search=renderopdracht-$d&orderby=id&order=desc&per_page=5&_fields=id,source_url" \
-                | python3 -c "import json,sys
-          try:
-              r=[m['source_url'] for m in json.load(sys.stdin) if 'renderopdracht-$d' in m.get('source_url','')]
-              print(r[0] if r else '')
-          except Exception: print('')")
-              if [ -z "$url" ]; then
-                echo "Nog geen renderopdracht voor $d op de site."
-                echo "skip=true" >> "$GITHUB_OUTPUT"; exit 0
-              fi
-              echo "Opdracht gevonden: $url"
-              curl -sf -A "Mozilla/5.0 GTAVI-STUDIO" "$url" -o "jobs/$d.json"
-              python3 -m json.tool "jobs/$d.json" > /dev/null || { echo "Opdracht is geen geldige JSON"; cat "jobs/$d.json"; exit 1; }
+            if [ ! -f "jobs/$d.json" ] || [ -n "${{ github.event.inputs.van_site }}" ]; then
+              set +e; python3 studio/haal_opdracht.py "$d" "jobs/$d.json"; rc=$?; set -e
+              if [ $rc -ne 0 ]; then echo "skip=true" >> "$GITHUB_OUTPUT"; exit 0; fi
+              cat "jobs/$d.json"
               echo "nieuw=true" >> "$GITHUB_OUTPUT"
+            fi
+            if [ "${{ github.event.inputs.alleen_ophalen }}" = "ja" ]; then
+              echo "Alleen ophalen (test): klaar."
+              echo "skip=true" >> "$GITHUB_OUTPUT"; exit 0
             fi
             f="jobs/$d.json"
           fi
@@ -123,7 +124,7 @@ jobs:
           echo "Klaar: https://raw.githubusercontent.com/${{ github.repository }}/media/${{ steps.job.outputs.datum }}/manifest.json"
 
       - name: Opdracht bewaren in jobs/ (logboek)
-        if: success() && steps.job.outputs.nieuw == 'true'
+        if: success() && steps.job.outputs.nieuw == 'true' && steps.job.outputs.skip != 'true'
         run: |
           cd "$GITHUB_WORKSPACE"
           git config user.name "gtavi-studio-bot"
