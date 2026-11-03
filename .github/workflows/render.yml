@@ -5,9 +5,9 @@ on:
     branches: [main]
     paths: ["jobs/*.json"]
   schedule:
-    # Elke 10 minuten tussen 06:00 en 10:00 (Belgische wintertijd): haalt de opdracht op
+    # Vier keer per uur tussen 06:00 en 17:00 (Belgische wintertijd); GitHub start geplande runs vaak pas uren later: haalt de opdracht op
     # die de scheduled task via Make op gta6centraal.com zette (renderopdracht-<datum>.txt)
-    - cron: "*/10 5-8 * * *"
+    - cron: "7,23,38,52 5-15 * * *"
   workflow_dispatch:
     inputs:
       datum:
