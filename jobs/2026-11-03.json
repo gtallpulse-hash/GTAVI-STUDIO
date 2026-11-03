@@ -1,0 +1,87 @@
+{
+ "datum": "2026-11-03",
+ "reels": [
+  {
+   "naam": "betaald-spelen",
+   "titel": "GTA 6 betaald spelen: 800 euro voor 8 uur gamen in Ierland",
+   "dias": [
+    {
+     "type": "cover",
+     "label": "NIEUWS",
+     "titel": "800 euro om GTA 6 te spelen",
+     "accent": "800 euro",
+     "sub": "Een Ierse provider zoekt een betaalde GTA 6-tester.",
+     "beeld": "https://gta6centraal.com/wp-content/uploads/2026/10/Jason_Duval_03-scaled.jpg"
+    },
+    {
+     "type": "punt",
+     "nr": 1,
+     "titel": "100 euro per uur",
+     "tekst": "Acht uur spelen, 800 euro verdienen, en de game krijg je er gratis bij.",
+     "beeld": "https://gta6centraal.com/wp-content/uploads/2026/10/Lucia_Caminos_05-scaled.jpg"
+    },
+    {
+     "type": "punt",
+     "nr": 2,
+     "titel": "Op je eigen tempo",
+     "tekst": "Spreid de acht uur over een week. Achteraf post je een eerlijke review.",
+     "beeld": "https://gta6centraal.com/wp-content/uploads/2026/10/Jason_and_Lucia_04-scaled.jpg"
+    },
+    {
+     "type": "punt",
+     "nr": 3,
+     "titel": "Wie mag meedoen?",
+     "tekst": "Er is één grote voorwaarde, en die is slecht nieuws voor Belgen en Nederlanders.",
+     "beeld": "https://gta6centraal.com/wp-content/uploads/2026/10/ULTIMATE_EDITION_SAFEHOUSE_VEHICLES_02-scaled.jpg"
+    },
+    {
+     "type": "vraag",
+     "titel": "Zou jij dit doen voor 800 euro?",
+     "sub": "Bron: Virgin Media Ireland via Dexerto",
+     "beeld": "https://gta6centraal.com/wp-content/uploads/2026/10/Jason_and_Lucia_10-scaled.jpg"
+    }
+   ]
+  },
+  {
+   "naam": "bioscoop",
+   "titel": "GTA 6 tegen de bioscoop: pre-orders 11 keer groter",
+   "dias": [
+    {
+     "type": "cover",
+     "label": "BETROUWBAAR GEMELD",
+     "titel": "GTA 6 verslaat Hollywood al",
+     "accent": "Hollywood",
+     "sub": "Fortune legde de pre-orders naast de bioscoopcijfers.",
+     "beeld": "https://gta6centraal.com/wp-content/uploads/2026/10/VINTAGE_VICE_CITY_PACK_EXCLUSIVE_LOOKS_04-scaled.jpg"
+    },
+    {
+     "type": "punt",
+     "nr": 1,
+     "titel": "630 miljoen dollar",
+     "tekst": "Zoveel zijn de digitale pre-orders al waard, volgens Sensor Tower.",
+     "beeld": "https://gta6centraal.com/wp-content/uploads/2026/10/Lucia_Caminos_08-scaled.jpg"
+    },
+    {
+     "type": "punt",
+     "nr": 2,
+     "titel": "11 keer meer",
+     "tekst": "Dan alle films samen opbrachten in het Halloweenweekend in Noord-Amerika.",
+     "beeld": "https://gta6centraal.com/wp-content/uploads/2026/10/Ambrosia_03-scaled.jpg"
+    },
+    {
+     "type": "punt",
+     "nr": 3,
+     "titel": "Pijnlijke timing",
+     "tekst": "Een grote film komt een dag na GTA 6 uit. Welke? Lees het artikel.",
+     "beeld": "https://gta6centraal.com/wp-content/uploads/2026/10/Jason_and_Lucia_07-scaled.jpg"
+    },
+    {
+     "type": "vraag",
+     "titel": "Kies jij de bioscoop of Vice City?",
+     "sub": "Bron: Fortune",
+     "beeld": "https://gta6centraal.com/wp-content/uploads/2026/10/Grassrivers_01-scaled.jpg"
+    }
+   ]
+  }
+ ]
+}
