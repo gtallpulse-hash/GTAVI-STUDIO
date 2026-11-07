@@ -1,0 +1,57 @@
+{
+  "datum": "2026-11-03",
+  "gemaakt": "2026-11-03T12:29:39Z",
+  "waarschuwingen": [],
+  "reels": [
+    {
+      "naam": "betaald-spelen",
+      "titel": "GTA 6 betaald spelen: 800 euro voor 8 uur gamen in Ierland",
+      "video": "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-03/betaald-spelen-short.mp4",
+      "duur_sec": 15.4,
+      "fotos_4x5": [
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-03/betaald-spelen-4x5-1.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-03/betaald-spelen-4x5-2.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-03/betaald-spelen-4x5-3.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-03/betaald-spelen-4x5-4.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-03/betaald-spelen-4x5-5.png"
+      ],
+      "fotos_9x16": [
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-03/betaald-spelen-9x16-1.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-03/betaald-spelen-9x16-2.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-03/betaald-spelen-9x16-3.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-03/betaald-spelen-9x16-4.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-03/betaald-spelen-9x16-5.png"
+      ],
+      "muziek": {
+        "titel": "Investigations",
+        "artiest": "Kevin MacLeod",
+        "credit": "Muziek: \"Investigations\" door Kevin MacLeod (incompetech.com), licentie CC BY 4.0"
+      }
+    },
+    {
+      "naam": "bioscoop",
+      "titel": "GTA 6 tegen de bioscoop: pre-orders 11 keer groter",
+      "video": "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-03/bioscoop-short.mp4",
+      "duur_sec": 15.4,
+      "fotos_4x5": [
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-03/bioscoop-4x5-1.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-03/bioscoop-4x5-2.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-03/bioscoop-4x5-3.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-03/bioscoop-4x5-4.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-03/bioscoop-4x5-5.png"
+      ],
+      "fotos_9x16": [
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-03/bioscoop-9x16-1.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-03/bioscoop-9x16-2.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-03/bioscoop-9x16-3.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-03/bioscoop-9x16-4.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-03/bioscoop-9x16-5.png"
+      ],
+      "muziek": {
+        "titel": "Volatile Reaction",
+        "artiest": "Kevin MacLeod",
+        "credit": "Muziek: \"Volatile Reaction\" door Kevin MacLeod (incompetech.com), licentie CC BY 4.0"
+      }
+    }
+  ]
+}
