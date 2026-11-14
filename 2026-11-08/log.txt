@@ -1,0 +1,22 @@
+127.0.0.1 - - [08/Nov/2026 11:51:24] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [08/Nov/2026 11:51:24] "GET /gta6-social-renderer.js HTTP/1.1" 200 -
+127.0.0.1 - - [08/Nov/2026 11:51:24] "GET /bebas-neue-latin-400-normal.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Nov/2026 11:51:24] "GET /inter-latin-400-normal.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Nov/2026 11:51:24] "GET /inter-latin-700-normal.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Nov/2026 11:51:24] "GET /beeld-4324977361.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [08/Nov/2026 11:51:25] "GET /beeld-9692622084.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [08/Nov/2026 11:51:25] "GET /beeld-4248152668.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [08/Nov/2026 11:51:25] "GET /beeld-9816730379.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [08/Nov/2026 11:51:25] "GET /beeld-2123507866.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [08/Nov/2026 11:51:26] "GET /beeld-2236031394.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [08/Nov/2026 11:51:26] "GET /beeld-994280175.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [08/Nov/2026 11:51:26] "GET /beeld-1079385334.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [08/Nov/2026 11:51:27] "GET /beeld-2408877825.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [08/Nov/2026 11:51:27] "GET /beeld-133106366.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [08/Nov/2026 11:51:27] "GET /beeld-2236031394.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [08/Nov/2026 11:51:27] "GET /beeld-994280175.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [08/Nov/2026 11:51:27] "GET /beeld-1079385334.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [08/Nov/2026 11:51:27] "GET /beeld-2408877825.jpg HTTP/1.1" 304 -
+Klaar: piloot-gta6-lucht (15.4s, muziek: Pamgaea)
+Klaar: miami-heat-vice-city (15.4s, muziek: Digital Lemonade)
+Manifest: https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-08/manifest.json
