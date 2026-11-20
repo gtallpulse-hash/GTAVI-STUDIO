@@ -1,0 +1,20 @@
+127.0.0.1 - - [18/Nov/2026 13:48:29] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [18/Nov/2026 13:48:29] "GET /gta6-social-renderer.js HTTP/1.1" 200 -
+127.0.0.1 - - [18/Nov/2026 13:48:29] "GET /bebas-neue-latin-400-normal.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [18/Nov/2026 13:48:29] "GET /inter-latin-400-normal.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [18/Nov/2026 13:48:29] "GET /inter-latin-700-normal.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [18/Nov/2026 13:48:29] "GET /beeld-5304229721.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [18/Nov/2026 13:48:29] "GET /beeld-2446568945.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [18/Nov/2026 13:48:29] "GET /beeld-9744881049.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [18/Nov/2026 13:48:30] "GET /beeld-1533723108.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [18/Nov/2026 13:48:30] "GET /beeld-1628501329.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [18/Nov/2026 13:48:31] "GET /beeld-5256544964.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [18/Nov/2026 13:48:31] "GET /beeld-7061344418.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [18/Nov/2026 13:48:31] "GET /beeld-2820156813.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [18/Nov/2026 13:48:31] "GET /beeld-4310970315.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [18/Nov/2026 13:48:31] "GET /beeld-4916195709.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [18/Nov/2026 13:48:32] "GET /beeld-4310970315.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [18/Nov/2026 13:48:32] "GET /beeld-4916195709.jpg HTTP/1.1" 304 -
+Klaar: lucia-actrice (15.4s, muziek: Digital Lemonade)
+Klaar: metacritic-score (15.4s, muziek: Movement Proposition)
+Manifest: https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-18/manifest.json

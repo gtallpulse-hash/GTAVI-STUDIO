@@ -1,0 +1,12 @@
+127.0.0.1 - - [16/Nov/2026 18:47:51] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 18:47:51] "GET /gta6-social-renderer.js HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 18:47:51] "GET /bebas-neue-latin-400-normal.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 18:47:51] "GET /inter-latin-400-normal.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 18:47:51] "GET /inter-latin-700-normal.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 18:47:51] "GET /beeld-4022147165.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 18:47:51] "GET /beeld-5631196584.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 18:47:51] "GET /beeld-9778106694.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 18:47:51] "GET /beeld-7307171216.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 18:47:51] "GET /beeld-1703201570.jpg HTTP/1.1" 200 -
+Klaar: gta6-waar-speelt-het-zich-af (15.4s, muziek: Cut and Run)
+Manifest: https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-16-map/manifest.json

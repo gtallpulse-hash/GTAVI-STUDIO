@@ -1,0 +1,20 @@
+127.0.0.1 - - [14/Nov/2026 12:02:59] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 12:02:59] "GET /gta6-social-renderer.js HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 12:02:59] "GET /bebas-neue-latin-400-normal.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 12:02:59] "GET /inter-latin-400-normal.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 12:02:59] "GET /inter-latin-700-normal.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 12:02:59] "GET /beeld-8724682128.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 12:02:59] "GET /beeld-7331289983.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 12:03:00] "GET /beeld-2591110375.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 12:03:00] "GET /beeld-7090604623.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 12:03:00] "GET /beeld-5101675459.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 12:03:01] "GET /beeld-2561042522.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 12:03:01] "GET /beeld-1448534978.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 12:03:01] "GET /beeld-6216541201.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 12:03:01] "GET /beeld-3875007858.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 12:03:02] "GET /beeld-210694007.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [14/Nov/2026 12:03:02] "GET /beeld-3875007858.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [14/Nov/2026 12:03:02] "GET /beeld-210694007.jpg HTTP/1.1" 304 -
+Klaar: macca-tekenfilm (15.4s, muziek: Volatile Reaction)
+Klaar: update-1-002 (15.4s, muziek: Crypto)
+Manifest: https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-14/manifest.json

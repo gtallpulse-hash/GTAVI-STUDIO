@@ -1,0 +1,19 @@
+127.0.0.1 - - [16/Nov/2026 13:32:29] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 13:32:29] "GET /gta6-social-renderer.js HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 13:32:29] "GET /bebas-neue-latin-400-normal.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 13:32:29] "GET /inter-latin-400-normal.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 13:32:29] "GET /inter-latin-700-normal.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 13:32:29] "GET /beeld-5486401869.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 13:32:29] "GET /beeld-9646529429.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 13:32:29] "GET /beeld-5803738721.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 13:32:29] "GET /beeld-5409915292.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 13:32:29] "GET /beeld-6574888806.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 13:32:30] "GET /beeld-6721440449.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 13:32:30] "GET /beeld-8869160382.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 13:32:30] "GET /beeld-9758365878.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 13:32:30] "GET /beeld-2133779473.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [16/Nov/2026 13:32:31] "GET /beeld-5458884825.jpg HTTP/1.1" 200 -
+Klaar: gta6-empathie (15.4s, muziek: Cut and Run)
+Muziek overgeslagen: Cipher Ophalen mislukt: https://incompetech.com/music/royalty-free/mp3-royaltyfree/Cipher.mp3: HTTP Error 404: Not Found
+Klaar: gta6-code-zaklamp (15.4s, muziek: Digital Lemonade)
+Manifest: https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-16/manifest.json
