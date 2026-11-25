@@ -1,11 +1,4 @@
 {
- "uitleg": "Officiële GTA VI-video's van Rockstar Games waaruit de workflow 'Stills' beelden haalt. 'kort' komt in de bestandsnaam. Nieuwe GTA VI-video's op het Rockstar-kanaal worden ook automatisch opgepikt. 'bron' = de originele Rockstar-video (voor de bronvermelding); 'download' = waar de video gedownload wordt als het origineel niet lukt (bv. leeftijdsbeperking).",
- "videos": [
-  {"id": "QdBZY2fkU-0", "kort": "T1", "titel": "Grand Theft Auto VI Trailer 1"},
-  {"id": "VQRLujxTm3c", "kort": "T2", "titel": "Grand Theft Auto VI Trailer 2"},
-  {"id": "rz1B4B2yBZY", "kort": "LT", "titel": "Grand Theft Auto VI Launch Trailer"},
-  {"id": "tJbzMqJGH4k", "kort": "EL", "titel": "Grand Theft Auto VI: An Extended Look", "download": ["_OECwb8j9U4", "ynlPxpaxpIc"]},
-  {"id": "_yl5ELcmugI", "kort": "ON", "titel": "Grand Theft Auto VI: Out Now"},
-  {"id": "8L0CzL2V72c", "kort": "FT", "titel": "Grand Theft Auto VI Features Trailer (PlayStation)"}
- ]
+ "uitleg": "Start-ID's op Rockstars eigen videoserver (videos.rockstargames.com/v4/<id>). De workflow 'Stills' volgt ook de 'related'-video's, zodat nieuwe officiële GTA VI-video's vanzelf meekomen. Video's die alleen op YouTube staan, worden overgeslagen (YouTube blokkeert downloads vanaf GitHub).",
+ "rockstar_ids": ["rk721912", "oats0rtr", "cpys7u21", "rkoCtr1r"]
 }

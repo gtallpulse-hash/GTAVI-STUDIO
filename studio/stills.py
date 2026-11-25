@@ -35,6 +35,46 @@ def laad_catalogus():
             "videos": {}, "stills": []}
 
 
+RS = "https://videos.rockstargames.com/v4/{}/data/en_us-context-embed.json"
+
+
+def rockstar_videos(start):
+    """Loopt de officiële Rockstar-videoserver af (start-ID's + 'related') en geeft GTA VI-video's met een mp4."""
+    import urllib.request
+    gezien, rij, uit = set(), list(start), []
+    while rij and len(gezien) < 80:
+        rid = rij.pop(0)
+        if rid in gezien:
+            continue
+        gezien.add(rid)
+        try:
+            req = urllib.request.Request(RS.format(rid), headers={"User-Agent": "Mozilla/5.0 GTAVI-STUDIO"})
+            data = json.load(urllib.request.urlopen(req, timeout=60))["data"]
+        except Exception as e:  # noqa: BLE001
+            print(f"  {rid}: niet gelezen ({e})"); continue
+        v = data.get("video") or {}
+        spel = json.dumps(v.get("game", "")) + json.dumps([r.get("game") for r in data.get("related", {}).get("results", [])])
+        for r in (data.get("related") or {}).get("results", []):
+            if re.search(r"gta6|gtavi|\bvi\b|grand theft auto vi", json.dumps(r.get("game", "")), re.I) or not r.get("game"):
+                rij.append(r["id"])
+        files = {f.get("size") or f.get("resolution") or f.get("label"): f.get("src") or f.get("url") for f in v.get("files", [])}
+        mp4 = None
+        for k in ("1080p", "1080", "720p", "720"):
+            for sleutel, url in files.items():
+                if str(sleutel).startswith(k) and url:
+                    mp4 = url; break
+            if mp4: break
+        if not mp4:
+            for f in v.get("files", []):
+                for waarde in f.values():
+                    if isinstance(waarde, str) and waarde.endswith("1080p.mp4"):
+                        mp4 = waarde
+        print(f"  Rockstar {rid}: {v.get('title')} | mp4: {'ja' if mp4 else 'nee'} | youtube: {v.get('youtubeId')}")
+        uit.append({"id": rid, "kort": rid, "titel": f"Grand Theft Auto VI: {v.get('title')}" if "Grand Theft" not in (v.get('title') or "") else v.get('title'),
+                    "mp4": mp4, "youtube": v.get("youtubeId"), "pagina": f"https://www.rockstargames.com/videos/{rid}"})
+    return uit
+
+
 def nieuwe_rockstar_videos(bekend):
     """Zoekt recente GTA VI-video's op het Rockstar-kanaal die nog niet in de lijst staan."""
     r = run(["yt-dlp", "--flat-playlist", "--playlist-end", "40", "-J",
@@ -141,7 +181,13 @@ def verwerk(v, cat, hashes):
     tmp = tempfile.mkdtemp()
     pad = os.path.join(tmp, "v.mp4")
     bron = None
-    for kandidaat in [v["id"]] + v.get("download", []):
+    if v.get("mp4"):
+        r = run(["curl", "-sSfL", "--retry", "3", "-A", "Mozilla/5.0", "-o", pad, v["mp4"]], timeout=2400)
+        if r.returncode == 0 and os.path.getsize(pad) > 1_000_000:
+            bron = v["mp4"]
+        else:
+            print("  mp4 van Rockstar mislukt:", r.stderr[-200:])
+    for kandidaat in ([] if bron else [x for x in [v.get("youtube")] + v.get("download", []) if x]):
         if download(kandidaat, pad):
             bron = kandidaat
             break
@@ -173,9 +219,9 @@ def verwerk(v, cat, hashes):
         hashes.append(hsh)
         nieuw.append({"code": code, "video": v["id"], "kort": kort, "titel": v["titel"], "tijd": f"{mm}:{ss:02d}",
                       "bestand": rel, "url": f"{RAW}/{rel}", "breed": img.width, "hoog": img.height,
-                      "youtube": f"https://www.youtube.com/watch?v={v['id']}&t={int(neem)}s", "dhash": f"{hsh:016x}"})
+                      "pagina": v.get("pagina", ""), "dhash": f"{hsh:016x}"})
     bladen = contactbladen(UIT, nieuw, kort)
-    cat["videos"][v["id"]] = {"kort": kort, "titel": v["titel"], "gedownload_van": bron, "uitsnede": crop,
+    cat["videos"][v["id"]] = {"kort": kort, "titel": v["titel"], "pagina": v.get("pagina", ""), "gedownload_van": bron, "uitsnede": crop,
                               "stills": len(nieuw), "contactbladen": [f"{RAW}/{b}" for b in bladen],
                               "verwerkt": time.strftime("%Y-%m-%d")}
     cat["stills"].extend(nieuw)
@@ -185,13 +231,9 @@ def verwerk(v, cat, hashes):
 
 def main():
     with open(os.path.join(HIER, "stills_bronnen.json"), encoding="utf-8") as f:
-        bronnen = json.load(f)["videos"]
+        start = json.load(f)["rockstar_ids"]
     cat = laad_catalogus()
-    bekend = {v["id"] for v in bronnen} | set(cat["videos"])
-    for vid in EXTRA:
-        if vid not in bekend:
-            bronnen.append({"id": vid, "kort": "X" + re.sub(r"[^A-Za-z0-9]", "", vid)[:6], "titel": f"Rockstar-video {vid}"})
-    bronnen += nieuwe_rockstar_videos(bekend)
+    bronnen = rockstar_videos(start + EXTRA)
     hashes = [int(s["dhash"], 16) for s in cat["stills"] if s.get("dhash")]
     gedaan = 0
     for v in bronnen:
