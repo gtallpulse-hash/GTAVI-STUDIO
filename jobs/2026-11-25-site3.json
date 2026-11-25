@@ -1,0 +1,56 @@
+{
+ "datum": "2026-11-25-site3",
+ "reels": [
+  {
+   "naam": "site-wat-vind-je",
+   "titel": "Wat vind je op GTA6 Centraal?",
+   "dias": [
+    {
+     "type": "cover",
+     "label": "OVER ONS",
+     "titel": "Wat vind je op GTA6 Centraal?",
+     "accent": "GTA6 Centraal",
+     "sub": "Dé Nederlandstalige GTA 6-site",
+     "beeld": 1211
+    },
+    {
+     "type": "punt",
+     "nr": 1,
+     "titel": "Gidsen per thema",
+     "tekst": "Beginnen, geld verdienen, missies, wapens, auto's, trofeeën en meer, netjes gesorteerd.",
+     "beeld": 1215
+    },
+    {
+     "type": "punt",
+     "nr": 2,
+     "titel": "De map van Leonida",
+     "tekst": "Van Vice City tot Port Gellhorn: welke regio's er zijn en wat je er vindt.",
+     "beeld": 1218
+    },
+    {
+     "type": "punt",
+     "nr": 3,
+     "titel": "Personages en verhaal",
+     "tekst": "Wie zijn Jason, Lucia en de rest? Plus hulp als je vastzit in een missie.",
+     "beeld": 1228
+    },
+    {
+     "type": "vraag",
+     "titel": "Wat zoek jij als eerste op?",
+     "sub": "gta6centraal.com",
+     "beeld": 1232,
+     "accent": "eerste",
+     "knop": "GTA6CENTRAAL.COM: LINK IN BIO"
+    }
+   ],
+   "captions": {
+    "link": "https://gta6centraal.com/",
+    "ig": "-",
+    "fb": "-",
+    "yt_titel": "-",
+    "yt_tekst": "-",
+    "liedje": "-"
+   }
+  }
+ ]
+}
