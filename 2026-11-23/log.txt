@@ -1,0 +1,19 @@
+127.0.0.1 - - [23/Nov/2026 15:55:24] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [23/Nov/2026 15:55:24] "GET /gta6-social-renderer.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Nov/2026 15:55:24] "GET /bebas-neue-latin-400-normal.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Nov/2026 15:55:24] "GET /inter-latin-400-normal.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Nov/2026 15:55:24] "GET /inter-latin-700-normal.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Nov/2026 15:55:24] "GET /beeld-902665038.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [23/Nov/2026 15:55:24] "GET /beeld-506703402.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [23/Nov/2026 15:55:24] "GET /beeld-5741104730.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [23/Nov/2026 15:55:25] "GET /beeld-6691834575.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [23/Nov/2026 15:55:25] "GET /beeld-9478816838.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [23/Nov/2026 15:55:25] "GET /beeld-6711835267.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [23/Nov/2026 15:55:26] "GET /beeld-6139516976.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [23/Nov/2026 15:55:26] "GET /beeld-6055484988.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [23/Nov/2026 15:55:26] "GET /beeld-213095878.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [23/Nov/2026 15:55:26] "GET /beeld-1551443033.jpg HTTP/1.1" 200 -
+Klaar: huis-jason-repareren (15.4s, muziek: Electrodoodle)
+Muziek overgeslagen: Cipher Ophalen mislukt: https://incompetech.com/music/royalty-free/mp3-royaltyfree/Cipher.mp3: HTTP Error 404: Not Found
+Klaar: kluiscodes (15.4s, muziek: Hitman)
+Manifest: https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-23/manifest.json

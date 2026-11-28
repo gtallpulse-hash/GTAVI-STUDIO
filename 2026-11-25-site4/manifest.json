@@ -1,0 +1,40 @@
+{
+  "datum": "2026-11-25-site4",
+  "gemaakt": "2026-11-25T21:44:29Z",
+  "waarschuwingen": [],
+  "reels": [
+    {
+      "naam": "site-wat-vind-je",
+      "titel": "Wat vind je op GTA6 Centraal?",
+      "captions": {
+        "link": "https://gta6centraal.com/",
+        "ig": "-",
+        "fb": "-",
+        "yt_titel": "-",
+        "yt_tekst": "-",
+        "liedje": "-"
+      },
+      "video": "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-25-site4/site-wat-vind-je-short.mp4",
+      "duur_sec": 15.4,
+      "fotos_4x5": [
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-25-site4/site-wat-vind-je-4x5-1.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-25-site4/site-wat-vind-je-4x5-2.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-25-site4/site-wat-vind-je-4x5-3.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-25-site4/site-wat-vind-je-4x5-4.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-25-site4/site-wat-vind-je-4x5-5.png"
+      ],
+      "fotos_9x16": [
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-25-site4/site-wat-vind-je-9x16-1.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-25-site4/site-wat-vind-je-9x16-2.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-25-site4/site-wat-vind-je-9x16-3.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-25-site4/site-wat-vind-je-9x16-4.png",
+        "https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-25-site4/site-wat-vind-je-9x16-5.png"
+      ],
+      "muziek": {
+        "titel": "Crypto",
+        "artiest": "Kevin MacLeod",
+        "credit": "Muziek: \"Crypto\" door Kevin MacLeod (incompetech.com), licentie CC BY 4.0"
+      }
+    }
+  ]
+}

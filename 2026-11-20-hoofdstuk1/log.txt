@@ -1,0 +1,12 @@
+127.0.0.1 - - [20/Nov/2026 06:02:08] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [20/Nov/2026 06:02:08] "GET /gta6-social-renderer.js HTTP/1.1" 200 -
+127.0.0.1 - - [20/Nov/2026 06:02:08] "GET /bebas-neue-latin-400-normal.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [20/Nov/2026 06:02:08] "GET /inter-latin-400-normal.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [20/Nov/2026 06:02:08] "GET /inter-latin-700-normal.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [20/Nov/2026 06:02:08] "GET /beeld-3182386082.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Nov/2026 06:02:08] "GET /beeld-2033827575.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Nov/2026 06:02:08] "GET /beeld-9116337386.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Nov/2026 06:02:08] "GET /beeld-4190480389.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [20/Nov/2026 06:02:08] "GET /beeld-8183763754.jpg HTTP/1.1" 200 -
+Klaar: gta6-hoofdstuk-1 (15.4s, muziek: Hitman)
+Manifest: https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-20-hoofdstuk1/manifest.json

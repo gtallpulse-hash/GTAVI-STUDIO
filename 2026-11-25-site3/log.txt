@@ -1,0 +1,12 @@
+127.0.0.1 - - [25/Nov/2026 21:40:49] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 21:40:49] "GET /gta6-social-renderer.js HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 21:40:49] "GET /bebas-neue-latin-400-normal.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 21:40:49] "GET /inter-latin-400-normal.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 21:40:49] "GET /inter-latin-700-normal.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 21:40:49] "GET /beeld-6922794704.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 21:40:49] "GET /beeld-3592128200.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 21:40:49] "GET /beeld-2846739174.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 21:40:49] "GET /beeld-8444373624.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 21:40:50] "GET /beeld-5063564042.jpg HTTP/1.1" 200 -
+Klaar: site-wat-vind-je (15.4s, muziek: Volatile Reaction)
+Manifest: https://raw.githubusercontent.com/gtallpulse-hash/GTAVI-STUDIO/media/2026-11-25-site3/manifest.json
